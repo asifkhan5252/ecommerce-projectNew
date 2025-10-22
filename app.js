@@ -24,16 +24,19 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-// ✅ Serve client build (for Vite)
-app.use(express.static(path.join(__dirname, "./client/dist")));
-
 // ✅ API Routes
 app.use("/api/auth", authRoute);
 app.use("/api/category", categoryRoutes);
 app.use("/api/product", productRoute);
 app.use("/api/payment", paymentRoutes);
 
-// ✅ Handle React Router (SPA) routes
+// ✅ Serve Uploads folder
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
+// ✅ Serve React Build (for Vite)
+app.use(express.static(path.join(__dirname, "./client/dist")));
+
+// ✅ Handle React Router (SPA)
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/dist/index.html"));
 });
