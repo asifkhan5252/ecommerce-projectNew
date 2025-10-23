@@ -1,0 +1,277 @@
+
+/* @import "tailwindcss"; */
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+.navbar{
+  font-family: "Poppin",sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 26px;
+  box-shadow: 0 8px 6px -6px gray;
+  -webkit-box-shadow: 0 8px 6px -6px gray ;
+  border-bottom: solid gray !important;
+}
+
+.nav-link{
+font-weight: 300 !important;
+}
+.active{
+  border-bottom: 2px solid black;
+}
+.navbar-brand{
+  display: flex;
+  font-weight: 700;
+  font-family: 'Times New Roman', serif;
+  word-spacing: normal;
+}
+
+/* ======== page not found css ======= */ */
+.pnf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
+  flex-direction: column;
+   text-align: center;
+  
+}
+
+.pnf-title {
+    font-size: 100px;
+  color: red;
+  /* font-size: 100px; */
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* /////// */
+
+.pnf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: bold;
+  color: red;
+}
+
+.pnf-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.pnf-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.pnf-btn:hover {
+  background-color: #555;
+}
+
+/* ========================================= */
+
+/* ==========footer============= */ 
+
+.footer {
+  color: white;
+  padding: 25px;
+  background-color: black; /* fallback for old browsers */
+
+}
+
+
+ .footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}  
+
+
+
+.footer {
+   background-color: rgb(12, 12, 12);
+  color: rgb(249, 246, 246);
+  padding: 25px;
+ 
+}
+
+.footer .footer-link {
+  text-decoration: none;
+  color: rgb(252, 250, 250);
+  padding: 10px;
+}
+
+.footer .footer-link:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+/* /* ================================= */
+
+/* =========contact us ========= */
+.contactus {
+  margin: 10px;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* product link All product mai hai */
+/* 🌟 Filter Section Container */
+.filter-section {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  border: 1px solid #e3e3e3;
+}
+
+.filter-heading {
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+/* 🧱 Filter Box Area */
+.filter-box {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 8px 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* ✅ Scrollbar Styling (Amazon feel) */
+.filter-box::-webkit-scrollbar {
+  width: 6px;
+}
+.filter-box::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 10px;
+}
+.filter-box::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* 🪶 Individual Filter Option */
+.filter-option {
+  transition: background-color 0.2s ease;
+}
+.filter-option:hover {
+  background-color: #f0f8ff;
+}
+
+/* 🔁 Reset Button */
+.btn-reset {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+.btn-reset:hover {
+  background-color: #e68a00;
+  color: #fff;
+}
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 768px) {
+  .filter-section {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .filter-box {
+    max-height: 180px;
+  }
+
+  .btn-reset {
+    padding: 6px 0;
+  }
+}
+
+
+/* Remove blue overlay from carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent !important;
+  background-image: none !important;
+  filter: none !important;
+}
+
+/* Make them visible (white icons with slight shadow like Amazon) */
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: '';
+}
+
+/* Hide blue background completely */
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+/* Optional: add soft white shadow to arrows for better visibility */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.4));
+}
+
+/* Remove hover effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: transparent !important;
+}
+
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4V0z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l4 4-4 4V0z'/%3E%3C/svg%3E");
+}
