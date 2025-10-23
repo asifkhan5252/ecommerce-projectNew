@@ -3,8 +3,8 @@ import Layouts from "../../components/Layout/Layouts";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useAuth } from "../../Context/Auth";
-import AdminMenu from "../../components/Layout/AdminMenu"; // better for admin orders
-
+// import AdminMenu from "../../components/Layout/AdminMenu"; // better for admin orders
+import UserMenu from "../../components/Layout/UserMenu";
 const AdminOrders = () => {
   const [orders, setOrders] = useState([]);
   const [auth] = useAuth();
@@ -39,7 +39,7 @@ const AdminOrders = () => {
         <div className="row">
           {/* Sidebar */}
           <div className="col-12 col-md-3 mb-4">
-            <AdminMenu />
+            <UserMenu />
           </div>
 
           {/* Orders Table */}
